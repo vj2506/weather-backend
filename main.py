@@ -36,6 +36,8 @@ def get_weather(city: str):
     
     final_payload = {
         "location": loc["name"],
+        "lat": lat,
+        "lon": lon,
         "daily": weather_data["daily"]
     }
 
